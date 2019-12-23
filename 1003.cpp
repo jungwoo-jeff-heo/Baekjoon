@@ -1,41 +1,51 @@
-#include "Common_hjw.h"
+#include <iostream>
 
 using namespace std;
 
-int fibonnacci(int n);
+unsigned int fibonnacci(int n);
+unsigned int arratFibonacci[41] = {};
 
 int main()
 {
-	do
+	arratFibonacci[0] = 0;
+	arratFibonacci[1] = 1;
+
+	int nTestCase = 0;
+	int nTarget = 0;
+
+	cin >> nTestCase;
+
+	while (nTestCase-- > 0)
 	{
-		unsigned int nNum_0 = 0;
-		unsigned int nNum_1 = 0;
-		unsigned int unTarget = 0;
+		cin >> nTarget;
 
-		cout << "input number" << endl;
-		cin >> unTarget;
+		if (nTarget == 0)
+		{
+			printf("%d %d\n", 1, 0);
+		}
+		else if (nTarget == 1)
+		{
+			printf("%d %d\n", 0, 1);
+		}
+		else
+		{
+			fibonnacci(nTarget);
+			printf("%u %u\n", arratFibonacci[nTarget - 1], arratFibonacci[nTarget]);
+		}
+	}
 
-		CHECK_NATURE_NUMBER(unTarget)
-	} while (1);
-
-	system("pause");
 	return 0;
 }
 
-int fibonnacci(int n)
+unsigned int fibonnacci(int n)
 {
-	if (n == 0)
+	if (n <= 0)
+		return arratFibonacci[0];
+	else if (arratFibonacci[n] == 0)
 	{
-		printf("0\n");
-		return 0;
-	}
-	else if (n == 1)
-	{
-		printf("1\n");
-		return 1;
+		arratFibonacci[n] = fibonnacci(n - 1) + fibonnacci(n - 2);
+		return arratFibonacci[n];
 	}
 	else
-	{
-		return fibonnacci(n - 1) + fibonnacci(n - 2);
-	}
+		return arratFibonacci[n];
 }

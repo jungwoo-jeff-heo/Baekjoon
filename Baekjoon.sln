@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{4B2101
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1003", "1003.vcxproj", "{DEFA89F9-CD5B-4533-B881-EC3577E5825F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1002", "1002\1002.vcxproj", "{2C8A100E-0EA5-4992-8254-2834E0899035}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1004", "1004\1004.vcxproj", "{AD1BC858-9838-4710-910D-E870C1F83D06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +25,14 @@ Global
 		{DEFA89F9-CD5B-4533-B881-EC3577E5825F}.Debug|x64.Build.0 = Debug|x64
 		{DEFA89F9-CD5B-4533-B881-EC3577E5825F}.Release|x64.ActiveCfg = Release|x64
 		{DEFA89F9-CD5B-4533-B881-EC3577E5825F}.Release|x64.Build.0 = Release|x64
+		{2C8A100E-0EA5-4992-8254-2834E0899035}.Debug|x64.ActiveCfg = Debug|x64
+		{2C8A100E-0EA5-4992-8254-2834E0899035}.Debug|x64.Build.0 = Debug|x64
+		{2C8A100E-0EA5-4992-8254-2834E0899035}.Release|x64.ActiveCfg = Release|x64
+		{2C8A100E-0EA5-4992-8254-2834E0899035}.Release|x64.Build.0 = Release|x64
+		{AD1BC858-9838-4710-910D-E870C1F83D06}.Debug|x64.ActiveCfg = Debug|x64
+		{AD1BC858-9838-4710-910D-E870C1F83D06}.Debug|x64.Build.0 = Debug|x64
+		{AD1BC858-9838-4710-910D-E870C1F83D06}.Release|x64.ActiveCfg = Release|x64
+		{AD1BC858-9838-4710-910D-E870C1F83D06}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
